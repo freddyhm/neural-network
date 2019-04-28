@@ -1,0 +1,28 @@
+Training data path: data_train.txt
+Number of frames to extract: 40
+Load static parameters or all parameters [static = 12][all = 26]: all
+Epoch: 1
+VC data path: data_vc.txt
+Generalization data path: data_test.txt
+Saved network snapshot file: network-snapshot.txt
+Saved database used for learning: learning-db.txt
+Initial weight interval: -0.1 0.1
+Number of input(s) [frames x static/all]: 10
+Eta: 0.1
+Activation Function: sigmoid
+Number of hidden layer(s): 1
+Threshold for hidden layer 1: 0 0 0
+Number of neuron(s) per layer: 5
+Number of neuron(s) in output layer: 10
+Threshold for output: 0 0 0
+Coded Output: 
+1: 1 0 0 0 0 0 0 0 0 0
+2: 0 1 0 0 0 0 0 0 0 0
+3: 0 0 1 0 0 0 0 0 0 0
+4: 0 0 0 1 0 0 0 0 0 0
+5: 0 0 0 0 1 0 0 0 0 0
+6: 0 0 0 0 0 1 0 0 0 0
+7: 0 0 0 0 0 0 1 0 0 0
+8: 0 0 0 0 0 0 0 1 0 0
+9: 0 0 0 0 0 0 0 0 1 0
+o: 0 0 0 0 0 0 0 0 0 1

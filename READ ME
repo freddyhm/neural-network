@@ -1,0 +1,55 @@
+
+---------------------------------------------------------------------------------------------------
+INSTALLATION
+---------------------------------------------------------------------------------------------------
+
+Éxecution:
+
+1 - Ouvrir le dossier "dist" et ensuite le dossier "main"
+2 - ..... (console UI)
+3 - Double-cliquer sur l'executable "main.exe" 
+4 - À la fin du programme vous trouverez le ficher "network-snapshot.txt" qui contient
+l'information du réseau qui à été utilisé pour la validation généralisé, et 
+et "learning-db.txt" qui contiendra la base de données pour l'apprentissage 
+
+Configuration:
+
+1 - Ouvrez le fichier "config.txt" et modifier les paramètres que vous voulez
+2 - Sauvez et double-cliquer sur "main.exe" à nouveau pour voir l'effet de votre configuration
+
+Note: faite attention à ne pas changer le nom des paramètres, par exemple: "Training data path:"
+
+Compilation:
+
+1 - Installer python 3
+2 - Installer tqdm (barre de progrès): 
+    - Dans une terminal: pip3 install tqdm
+3 - Installer   
+3 - Rouler "main.py"
+
+NOTE: le code est écrit en anglais pour éviter des problèmes de caractère au cours du dévelopement
+
+---------------------------------------------------------------------------------------------------
+STRUCTURE DU PROGRAMME
+---------------------------------------------------------------------------------------------------
+
+Le programme est divisé en 5 partie majeurs: 
+
+- Le "main" (main.py): 
+    - Démarre le programme
+    - Crée le système 
+
+- Le Système (system.py):
+    - Utilise l'utilitaire pour lire le fichier de configuration
+    - Crée le réseau avec le fichier de configuration 
+    - Crée une calculatrice pour faire les calculs nécessaires sur le réseau  
+    - Contient la boucle d'apprentissage et les boucles de test
+
+- Le Réseau (network.py):
+    - Contient les couches, les neurones et les branches 
+
+- La Calculatrice (calculator.py):
+    - Contient l'algorithme du réseau de neurone pour chaque phase
+
+- L'Utilitaire (utility.py):
+    - Aide à extraire et formatter les données et le fichier de configuration
